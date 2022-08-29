@@ -9,7 +9,7 @@ node{
     stage('Test image') {
         docker.image('quiny/nginx').withRun('-p 80:80') { c ->
         sh 'docker ps'
-        sh 'curl 172.31.36.206'
+        sh 'curl 172.31.44.193'
          }
     }
 }
